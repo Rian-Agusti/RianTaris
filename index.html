@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Layanan Pengaduan Mahasiswa</title>
+  </head>
+  <body class="bg-gray-800 text-white">
+    <!-- Header -->
+    <header class="bg-gray-900 p-4 sticky top-0 z-50">
+      <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4 py-4 text-white">
+        <a href="#" class="text-2xl md:text-3xl font-bold mb-2 md:mb-0 text-center md:text-left"> Layanan Pengaduan Mahasiswa </a>
+        <ul class="flex flex-col md:flex-row gap-2 md:gap-4 items-center">
+          <li>
+            <a href="index.html" class="py-2 px-4 hover:text-amber-300 border border-red-500 rounded-2xl hover:bg-red-400 transition">Home</a>
+          </li>
+          <li>
+            <a href="about.html" class="py-2 px-4 hover:text-amber-300 transition">About</a>
+          </li>
+          <li>
+            <a href="contact.html" class="py-2 px-4 hover:text-amber-300 transition">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Main Content -->
+    <main class="min-h-screen flex items-center px-4">
+      <div class="container mx-auto text-center">
+        <h1 class="text-2xl md:text-4xl font-bold mb-4">Silakan Sampaikan Keluhan atau Masukan Anda</h1>
+        <p class="mb-6 text-sm md:text-base px-2">Kami akan menindaklanjuti laporan Anda sebaik mungkin dengan data yang Anda berikan.</p>
+        <form action="https://formspree.io/f/mnnvblvr" method="POST" class="bg-gray-900 max-w-lg mx-auto p-6 rounded-lg shadow-md space-y-4 text-left">
+          <!-- Nama -->
+          <div>
+            <label class="block text-sm font-medium text-gray-300 mb-1">Nama Lengkap</label>
+            <input type="text" name="nama" required class="w-full p-2 border rounded focus:outline-none focus:ring focus:border-blue-400 text-white" placeholder="Contoh: Rian Agusti" />
+          </div>
+
+          <!-- Email -->
+          <div>
+            <label class="block text-sm font-medium text-gray-300 mb-1">Email Anda</label>
+            <input type="email" name="email" required class="w-full p-2 border rounded focus:outline-none focus:ring focus:border-blue-400 text-white" placeholder="Contoh: riantarisagusti@gmail.com" />
+          </div>
+
+          <!-- Pesan -->
+          <div>
+            <label class="block text-sm font-medium text-gray-300 mb-1">Isi Keluhan Anda</label>
+            <textarea name="message" required class="w-full h-32 md:h-40 p-3 border rounded resize-none focus:outline-none focus:ring focus:border-blue-400 text-white" placeholder="Contoh: Saya mengalami kendala dalam..."></textarea>
+          </div>
+
+          <!-- Tombol -->
+          <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-2 rounded hover:bg-blue-700 transition">Kirim</button>
+        </form>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 p-4 text-center text-sm mt-7">
+      <p>&copy; 2025 Layanan Pengaduan Mahasiswa. By Rian Taris Agusti.</p>
+    </footer>
+  </body>
+</html>
